@@ -1,0 +1,496 @@
+
+/* =================================
+   1. COLOUR PALETTE
+================================= */
+
+:root {
+    --primary: #AB1164;
+    --pink: #EBB2C6;
+    --light-pink: #FFE6E6;
+    --mint: #E0FFD4;
+    --cream: #FFF9CF;
+    --white: #FFFFFF;
+    --text: #800747;
+}
+
+
+/* =================================
+   2. BASIC SETTINGS
+================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* =================================
+   3. ANIMATED GRADIENT BACKGROUND
+================================= */
+
+.gradient-background {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+        300deg,
+        var(--light-pink),
+        var(--mint),
+        var(--cream)
+    );
+
+    background-size: 600% 600%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* =================================
+   4. HEADER AND NAVIGATION
+================================= */
+
+.site-header {
+    width: 100%;
+    padding: 12px 15px 0;
+}
+
+#main-menu {
+    width: 100%;
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+    padding: 10px 20px;
+
+    background-color: var(--pink);
+    border: 1px solid #84074a;
+}
+
+/* Logo */
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#logo img {
+    width: 150px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#main-menu .nav-links a {
+    color: var(--cream);
+    text-decoration: none;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-style: italic;
+
+    padding: 10px;
+}
+
+/* Sign In */
+
+#log-in-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 100px;
+    padding: 10px 18px;
+
+    background-color: var(--primary);
+    color: var(--cream);
+
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* =================================
+   5. MAIN BACKGROUND
+================================= */
+
+.page-background {
+    flex: 1;
+
+    width: 100%;
+    padding: 28px 30px 35px;
+
+    display: flex;
+}
+
+
+/* =================================
+   6. NOTEPAD LAYOUT
+================================= */
+
+.notepad {
+    display: flex;
+
+    width: 100%;
+    min-height: 58vh;
+
+    border: 2px solid var(--primary);
+    background-color: var(--white);
+}
+
+
+/* =================================
+   7. SAVED ENTRIES
+================================= */
+
+.saved-panel {
+    width: 28%;
+    flex-shrink: 0;
+
+    border-right: 2px solid var(--primary);
+    padding: 20px;
+
+    background-color: var(--white);
+}
+
+.saved-panel h2 {
+    color: var(--primary);
+
+    font-size: 16px;
+    font-style: italic;
+
+    margin: 0 0 15px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid var(--light-pink);
+}
+
+.saved-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.saved-panel li {
+    color: var(--primary);
+
+    font-size: 13px;
+    font-style: italic;
+
+    padding: 15px 5px;
+
+    border-bottom: 1px solid var(--light-pink);
+}
+
+
+/* =================================
+   8. EDITOR
+================================= */
+
+.editor {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    background-color: var(--white);
+}
+
+
+/* =================================
+   9. TOOLBAR
+================================= */
+
+.toolbar {
+    min-height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+    padding: 8px 12px;
+
+    border-bottom: 1px solid var(--light-pink);
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tools button {
+    border: 1px solid var(--pink);
+    border-radius: 15px;
+
+    background-color: var(--white);
+    color: var(--primary);
+
+    padding: 6px 10px;
+
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search input {
+    width: 160px;
+
+    border: 1px solid var(--pink);
+    border-radius: 15px;
+
+    padding: 7px 10px;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    outline: none;
+}
+
+
+/* =================================
+   10. WRITING AREA
+================================= */
+
+.writing-area {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 350px;
+    padding: 12px 15px;
+
+    background-color: var(--white);
+
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 39px,
+        var(--mint) 40px,
+        transparent 41px
+    );
+}
+
+.placeholder {
+    font-size: 15px;
+    color: var(--text);
+
+    margin: 5px 0 12px;
+}
+
+.writing-area textarea {
+    display: block;
+
+    flex: 1;
+    width: 100%;
+    min-height: 250px;
+
+    resize: vertical;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    color: var(--text);
+
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+
+/* =================================
+   11. ACTION BUTTONS
+================================= */
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 75px;
+    padding: 12px;
+
+    border-top: 1px solid var(--light-pink);
+    background-color: var(--white);
+}
+
+.save-button,
+.release-button {
+    border: 2px dashed var(--primary);
+    border-radius: 22px;
+
+    background-color: var(--cream);
+    color: var(--primary);
+
+    padding: 10px 18px;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.release-button {
+    background-color: var(--light-pink);
+}
+
+.save-button:hover,
+.release-button:hover {
+    background-color: var(--mint);
+}
+
+
+/* =================================
+   12. FOOTER
+================================= */
+
+.site-footer {
+    width: 100%;
+    padding: 0 15px 15px;
+
+    margin-top: auto;
+}
+
+.footer-menu {
+    width: 100%;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+    padding: 15px 20px;
+
+    background-color: var(--pink);
+    color: var(--primary);
+
+    border: 1px solid #84074a;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.footer-contact,
+.footer-date {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-menu h3 {
+    color: #84074a;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.star-divider {
+    color: #84074a;
+    font-style: normal;
+}
+
+.footer-time {
+    padding: 5px 9px;
+
+    border-radius: 15px;
+    background-color: #ab116435;
+
+    font-weight: bold !important;
+}
+
+
+/* =================================
+   13. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 750px) {
+
+    #main-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #main-menu .nav-links a {
+        font-size: 18px;
+    }
+
+    .page-background {
+        padding: 15px;
+    }
+
+    .notepad {
+        flex-direction: column;
+    }
+
+    .saved-panel {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid var(--primary);
+    }
+
+    .toolbar {
+        flex-wrap: wrap;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-contact,
+    .footer-date {
+        flex-wrap: wrap;
+    }
+}
