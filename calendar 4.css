@@ -43,7 +43,6 @@ body {
     padding-right: 20px;
     background-color: #ebb2c6;
     border: 1px solid #84074a;
-    font-family: "Roboto", sans-serif;
 }
 
 .main-menu a {
@@ -54,7 +53,7 @@ body {
 
 .logo {
     margin-right: 200px;
-    transform: translate(0px,15px)
+    transform: translate(0px,15px);
 }
 
 .logo img {
@@ -70,7 +69,6 @@ body {
     color: #FFF9CF;
     font-size: 25px;
     font-style: italic;
-    white-space: nowrap;
 }
 
 .sign-in {
