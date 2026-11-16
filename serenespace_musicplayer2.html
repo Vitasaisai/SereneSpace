@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <link rel="stylesheet" href="serenespace_musicplayer2.css">
+</head>
+
+<body class="gradient-background">
+
+
+    <header>
+        <!-- Header - Logo and Navigation -->
+        <nav id="main-menu">
+             <a id="logo" href="serenespace_home.html">
+            <img src="/Users/alisa/Desktop/Front End Web (Golds)/SereneSpace_Logo.png" alt="SereneSpace Logo"
+            style="width:100px; height: 70px; margin-left:20px;"></a> 
+
+            <a id="diary-button" href="placeholder.html">Diary</a>
+            <a id="taskmaster-button" href="placeholder.html">Taskmaster</a>
+            <a id="musicplayer-button" href="serenespace_musicplayer2.html">Music Player</a>
+
+             <a id="log-in-button" href="serenespace_login.html">Sign In</a>
+        
+        </nav>
+    </header>
+
+
+
+    <!-- Main Music Player -->
+    <main class="music-player">
+
+        <!-- Music Player Header -->
+        <div class="window-header">
+            <span>× □ —</span>
+        </div>
+
+        <div class="player-content">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <h2>♫</h2>
+
+                <nav>
+                    <p>My Playlists</p>
+                    <p>Shared</p>
+                    <p>Liked</p>
+                    <p>Liked Songs</p>
+                    <p>Recommended</p>
+                </nav>
+
+            </aside>
+
+            <!-- Main Content -->
+            <section class="content">
+
+                <h2 class="player-title">Music Player</h2>
+
+                <!-- Search and Mood -->
+                <div class="search-area">
+
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input type="text"
+                        placeholder="Search for songs, artists, or moods...">
+                    </div>
+
+
+                </div>
+
+                <!-- Featured Playlists -->
+                <!-- <h3>Featured Playlists</h3> -->
+
+                <div class="featured-playlists">
+
+                    <div class="playlist-card">
+                        <div class="card-header"></div>
+
+                        <div class="playlist-card-inside">
+                            <img src="https://m.media-amazon.com/images/I/81ihSnQmniL._UF894,1000_QL80_.jpg"
+                        alt="'Iris' by The Goo Goo Dolls" >
+                            <h2 id="song-name">Iris ㅤㅤ <i style=" text-align:left; font-style:italic; font-size:14px; font-weight:normal;">The Goo Goo Dolls</i></h2>
+                    
+                            <!-- <p id="artist-name">The Goo Goo Dolls</p> -->
+                        </div>
+
+                        <!-- <img src="https://www.canva.com/design/DAHawL5OgNU/pI318ZCCCHoux5YlsRtqvQ/view"> -->
+
+
+                        <!-- Canva Embed Link -- Embedded directly from mockups board. -->
+
+                        <div style="position: relative; width: 100%; height: 0; padding-top: 27.2727%;
+ padding-bottom: 0;; margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; cursor: pointer;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0; cursor:pointer;"
+    src="https://www.canva.com/design/DAHawGOghp8/cIZ8ubCznVUM2nKITfS6fQ/view?embed">
+  </iframe>
+</div>
+
+                        
+
+
+
+                        
+
+
+                        <!-- <img src="https://m.media-amazon.com/images/I/81ihSnQmniL._UF894,1000_QL80_.jpg"
+                        alt="'Iris' by The Goo Goo Dolls" > 
+                        <h2 id="song-name">Iris</h2> <h3 id="artist-name">The Goo Goo Dolls</h3> -->
+                        <!-- <div class = "player-drawing">
+                            <div id="play"></div>
+                            <div id="right-speed"></div>
+                            <div id="left-speed"></div>
+
+                        </div> -->
+                
+                    </div>
+
+                <div class = "playlist-active">
+                        <h2 id="active-list-heading">Relaxing Songs</h2>
+
+                        <div class="SPACEBABYYY"></div>
+
+                        <!-- <li id="songs-in-playlist">
+                            SPACE MAN - Sam Ryder
+                            Iris - The Goo Goo Dolls
+                            Desclocado - NAPA
+                            Enfant de - Pierre de Maere
+                            Graze the Roof - Laura Shigihara
+                            Strawberry Swing - Coldplay
+                            Weightless - Marconi Union & Lyz Cooper
+                            Someone Like You - Adele
+                            Million Dollar Breakdown -Landon Gamble
+                            Arcade - Duncan Laurence
+                            Misguided Ghosts - Paramore
+                            Blue Lights - Jorja Smith
+                        </li> -->
+                        <div class="song-list">
+                            <p>1. <i>SPACE MAN</i> - Sam Ryder</p>
+                            <div id="SMALLERspace"></div>
+                            <!-- <p id="plays-now"><strong>2. <i>Iris</i> - The Goo Goo Dollsㅤㅤ၊၊|။|</strong></p> -->
+                            <p style="color:#376957"><strong>2. <i>Iris</i> - The Goo Goo Dollsㅤㅤ၊၊|။|</strong></p>
+                            <div id="SMALLERSPACE"></div>
+                            <p>3. <i>Desclocado</i> - NAPA</p>
+                            <div class="smallerspace"></div>
+                            <p>4. <i>Enfant de</i> - Pierre de Maere</p>
+                            <div class="smallerspace"></div>
+                            <p>5. <i>Graze the Roof</i> - Laura Shigihara</p>
+                            <div class="smallerspace"></div>
+                            <p>6. <i>Strawberry Swing</i> - Coldplay</p>
+                            <div class="smallerspace"></div>
+                            <p>7. <i>Toast</i> - Smith & Thell</p>
+                            <div class="smallerspace"></div>
+                            <p>8. <i>Someone Like You</i> - Adele</p>
+                            <div class="smallerspace"></div>
+                            <p>9. <i>Worship</i> - Ari Abdul</p>
+                            <div class="smallerspace"></div>
+                            <p>10. <i>Arcade</i> - Duncan Laurence</p>
+                            <div class="smallerspace"></div>
+                            <p>11. <i>Misguided Ghosts</i> - Paramore</p>
+                            <div class="smallerspace"></div>
+                            <p>12. <i>Blue Lights </i>- Jorja Smith</p>
+
+                        </div>
+                        <!-- <p>
+                            SPACE MAN - Sam Ryder
+                            Iris - The Goo Goo Dolls
+                            Desclocado - NAPA
+                            Enfant de - Pierre de Maere
+                            Graze the Roof - Laura Shigihara
+                            Strawberry Swing - Coldplay
+                            Weightless - Marconi Union & Lyz Cooper
+                            Someone Like You - Adele
+                            Million Dollar Breakdown -Landon Gamble
+                            Arcade - Duncan Laurence
+                            Misguided Ghosts - Paramore
+                            Blue Lights - Jorja Smith
+                        </p> -->
+                    </div>
+
+        
+
+                </div>
+
+
+
+                <!-- <div class = "playlist-active">
+                    <li id="songs-in-playlist">
+
+                    </li>
+                </div> -->
+
+
+
+                <!-- My Playlists
+                <div class="my-playlists">
+
+                    <div class="playlist-heading">
+                        <h3>My Playlists</h3>
+                        <button>+ Create New</button>
+                    </div>
+
+                    <div class="song">
+                        <span>Study beats</span>
+                        <span class="song-icons">▶　•••</span>
+                    </div>
+
+                    <div class="song">
+                        <span>Dance break</span>
+                        <span class="song-icons">▶　•••</span>
+                    </div>
+
+                    <div class="song">
+                        <span>Relaxing songs</span>
+                        <span class="song-icons">▶　•••</span>
+                    </div>
+
+                </div> -->
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav class = "footer-menu">
+            <h3 id="email"><strong>Write us: </strong> support.serenespace@gmail.com</h3>
+             <div class="footerspace"></div>
+             <div class = "star-divider"> ✮ </div>
+             <div class="footerspace"></div>
+            <h3 id="number"><strong>Number: </strong> +441234567890</h3>
+
+             <div class="beeeg-space"></div>
+
+             <div class="footerspace"></div>
+            <h3 id="date">Saturday, October 31</h3>
+             <div class="footerspace"></div>
+             <div class = "star-divider"> ✮ </div>
+             <div class="footerspace"></div>
+            <h3 id="time">00:29</h3>
+        </nav>
+
+    </footer>
+
+</body>
+</html>
