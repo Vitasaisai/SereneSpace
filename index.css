@@ -1,0 +1,330 @@
+
+/* =========================
+   1. General Settings
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 35px 8%;
+    background-color: #fff1f1;
+    font-family: Arial, sans-serif;
+    color: #a51b62;
+}
+
+
+/* =========================
+   2. Top Navigation Bar
+========================= */
+
+.top-bar {
+    height: 55px;
+    background-color: #e9a9c3;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    border: 2px solid #c43c83;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: #b51b68;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   3. Main Music Player
+========================= */
+
+.music-player {
+    background-color: #fff7f7;
+    border: 2px solid #333;
+    margin: 25px auto;
+    max-width: 1000px;
+    min-height: 480px;
+    padding: 0;
+}
+
+/* Window Header */
+
+.window-header {
+    height: 22px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-left: 8px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Main Player Content */
+
+.player-content {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    min-height: 455px;
+}
+
+
+/* =========================
+   4. Sidebar
+========================= */
+
+.sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    border: 2px solid #c77b9e;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    font-size: 35px;
+    margin: 0 0 15px;
+}
+
+.sidebar nav p {
+    font-size: 16px;
+    font-style: italic;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar nav p:first-child {
+    font-weight: bold;
+}
+
+.sidebar nav p:hover {
+    color: #e16b9d;
+}
+
+
+/* =========================
+   5. Main Content
+========================= */
+
+.content {
+    flex: 1;
+    background-color: #ffffff;
+    border: 2px solid #777;
+    padding: 12px;
+    min-width: 0;
+}
+
+.player-title {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 0 15px;
+}
+
+
+/* =========================
+   6. Search Bar
+========================= */
+
+.search-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 2px solid #d58aab;
+    border-radius: 20px;
+    padding: 5px 12px;
+}
+
+.search-box span {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.search-box input::placeholder {
+    color: #c77b9e;
+}
+
+.mood-menu {
+    background-color: #e9a9c3;
+    color: #a51b62;
+    border: 1px solid #c77b9e;
+    border-radius: 12px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   7. Featured Playlists
+========================= */
+
+.content h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.featured-playlists {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.playlist-card {
+    width: 32%;
+    border: 1px solid #c77b9e;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+}
+
+/* Small Window Decoration */
+
+.card-header {
+    height: 8px;
+    background-color: #c5d9bd;
+    border: 1px solid #c77b9e;
+    margin: -8px -8px 8px;
+}
+
+.playlist-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.playlist-card p {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 8px 0;
+}
+
+
+/* =========================
+   8. My Playlists
+========================= */
+
+.my-playlists {
+    border-top: 2px solid #e5b1c8;
+    padding-top: 8px;
+}
+
+.playlist-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.playlist-heading h3 {
+    margin: 0;
+}
+
+.playlist-heading button {
+    background-color: #b51b68;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Song List */
+
+.song {
+    border: 1.5px solid #d58aab;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.song-icons {
+    color: #b51b68;
+    font-style: normal;
+    cursor: pointer;
+}
+
+
+/* =========================
+   9. Footer
+========================= */
+
+.footer {
+    background-color: #e9a9c3;
+    border: 2px solid #333;
+    min-height: 40px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+/* =========================
+   10. Responsive Design
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .player-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .featured-playlists {
+        flex-wrap: wrap;
+    }
+
+    .playlist-card {
+        width: 45%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
