@@ -1,2 +1,0 @@
-# SereneSpace
-Group website project 
