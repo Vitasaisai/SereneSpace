@@ -1,0 +1,640 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* SOURCE: https://fonts.google.com/specimen/Leckerli+One
+SOURCE: https://fonts.google.com/specimen/Roboto */
+
+
+/* ~~~ NOTE: the following is modified from Joanna's page; edits done by me are marked; and her original code is commented out. */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-color: rgb(10, 10, 41);
+    margin: 0;
+    /* padding: 35px 8%; */
+    background-color: #fff1f1;
+    font-family: "Roboto";
+    color: #a51b62;
+}
+
+
+
+.gradient-background {
+    background: linear-gradient(300deg,#FFE6E6,#E0FFD4,#FFF9CF);
+    background-size: 600% 600%;
+    animation: gradient-animation 18s ease infinite;
+    }
+
+        @keyframes gradient-animation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+
+
+    } 
+
+
+
+
+#main-menu {
+    /*background-color: #401687 */
+    /* background: linear-gradient(to right, #401687 0%, #540558 100%); */
+    border: 2px black;
+    background-color: #ebb2c6;
+    margin-bottom: 10px;
+    /* border: 2px black; */
+    display:flex;
+    flex-direction: row;
+    border: 1px solid #84074a;
+
+
+}
+a {
+    color: #fff8c7;
+    text-decoration: none;
+    font-family:"Roboto";
+    padding: 10px;
+    font-size: 
+    xx-large;
+}
+
+
+
+#logo {
+    padding: 0;
+    /* margin-right:910px; */
+    margin-right:200px;
+    
+}
+
+#log-in-button {
+    /* z-index:15; source: https://www.youtube.com/watch?v=m7YDWNz65iI */
+    left:820px;
+    bottom:1;
+
+    text-align:center;
+
+    margin-top:15px;
+  
+    position: relative;
+    border-radius: 50px;
+    border-color:#ab1164;
+    background-color:#ab1164;
+    text-align:center;
+    font-size:20px;
+    text-align:center;
+    display:inline-flex;
+    height: 45px;
+    width:100px;
+    display: block;
+
+}
+
+#log-in-button:hover {
+    background-color:#71043e;
+}
+
+#diary-button {
+    color:#FFF9CF;
+    text-decoration: none;
+    font-family:"Roboto";
+    padding:20px;
+    font-size:25px;
+    margin-top:3px;
+    font-style:italic;
+    right:20px;
+}
+
+
+#taskmaster-button {
+    color:#FFF9CF;
+    text-decoration: none;
+    font-family:"Roboto";
+    padding:20px;
+    font-size:25px;
+    margin-top:3px;
+    font-style:italic;
+    right:20px;
+}
+
+#musicplayer-button {
+    color:#FFF9CF;
+    text-decoration: none;
+    font-family:"Roboto";
+    padding:20px;
+    font-size:25px;
+    margin-top:3px;
+    font-style:italic;
+    right:20px;
+    font-weight:bold;
+    text-decoration-line:underline;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ JOANNA'S ~~~~~~~~~~~~~~~~~~~~ */
+
+
+   /* 3. Main Music Player */
+
+.music-player {
+    background-color: #fff7f7;
+    border: 2px solid #333;
+    margin: 25px auto;
+    max-width: 1000px;
+    min-height: 480px;
+    padding: 0;
+    margin-top:40px;
+}
+
+/* Window Header */
+
+.window-header {
+    height: 22px;
+    background-color: #b7d4ac;
+    border-bottom: 2px solid #333;
+    padding-left: 8px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Main Player Content */
+
+.player-content {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    min-height: 455px;
+}
+
+
+/* =========================
+   4. Sidebar
+========================= */
+
+.sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    border: 2px solid #c77b9e;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    font-size: 35px;
+    margin: 0 0 15px;
+}
+
+.sidebar nav p {
+    font-size: 16px;
+    font-style: italic;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar nav p:first-child {
+    font-weight: bold;
+}
+
+.sidebar nav p:hover {
+    color: #e16b9d;
+}
+
+
+/* =========================
+   5. Main Content
+========================= */
+
+.content {
+    flex: 1;
+    background-color: #ffffff;
+    border: 2px solid #777;
+    padding: 12px;
+    min-width: 0;
+}
+
+.player-title {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 0 15px;
+}
+
+
+/* =========================
+   6. Search Bar
+========================= */
+
+.search-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 2px solid #d58aab;
+    border-radius: 20px;
+    padding: 5px 12px;
+}
+
+.search-box span {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.search-box input::placeholder {
+    color: #c77b9e;
+}
+
+
+/* =========================
+   7. Featured Playlists
+========================= */
+
+.content h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.featured-playlists {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.playlist-card {
+    width: 32%;
+    border: 1px solid #84074a;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    margin-left:10px;
+    position: relative;
+    right:7px;
+    width: 310px;
+    height:310px;
+}
+
+/* Small Window Decoration */
+
+.card-header {
+    height: 8px;
+    background-color: #c5d9bd;
+    border: 1px solid #c77b9e;
+    margin: -8px -8px 8px;
+}
+
+.playlist-card-inside {
+    display:flex;
+    /* justify-content:space-around;*/
+    
+}
+
+
+#song-name {
+    padding-left: 20px;
+    text-align:left;
+    display:flex;
+    /* justify-content:space-around; */
+    margin-top:20px;
+    /* margin-right:120px; */
+    z-index: 10;
+    margin-right:500;
+    right:500px;
+    flex-direction:column;
+    flex-wrap:wrap;
+
+}
+
+#artist-name {
+    padding-left: 20px;
+    text-align:left;
+    font-style:italic;
+    font-size:13px;
+    display:flex;
+    margin-top:40px;
+    z-index: 10;
+    margin-right:500;
+    right:500px;
+    flex-direction:column;
+    
+    
+    /* font-weight:normal;
+    font-style:italic;
+    text-align:left;
+    display:flex;
+    justify-content:flex-start;
+    flex-basis:content;
+    margin-top:50px;
+    font-size:13px;
+    flex-direction:column;
+    width:300px; */
+   
+
+
+    /* font-size:13px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-left:0px;
+    width:170px; */
+
+
+
+}
+
+
+
+.playlist-card img {
+    
+    /* width:50%;
+    margin-top:10px;
+    margin-right:120px; */
+    
+    margin-top:10px;
+    margin-left:5px;
+    width:145px;
+    border: 6px solid #ebb2c6;
+
+    aspect-ratio: 1 / 1;
+    /* object-fit: cover; */
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+
+.playlist-card p {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 8px 0;
+    display:flex;
+    /* justify-content: space-around; */
+}
+
+
+.playlist-active {
+    background-color: #ffffff;
+    border: 1px solid #c77b9e;
+    border-radius:20px;
+    /* display:flex;
+    justify-content: space-around; */
+    width: 330px;
+    height:380px;
+    /* margin-bottom:30px; */
+
+    
+
+}
+
+.SPACEBABYYY {
+    margin-top:5px;
+}
+
+.smallerspace {
+    margin-top: 8px;
+}
+
+#active-list-heading {
+    padding:0;
+    /* margin:0; */
+    display:inline-flex;
+    font-size:20px;
+    color: #84074a;
+    margin-top: 7px;
+    margin-left:9px;
+
+
+    
+}
+
+/* #songs-in-playlist {
+    padding:0;
+    margin:0;
+    font-size:10px;
+    color: #ab1164;
+    margin-top: 7px;
+    margin-left:9px;
+    font-family:"Roboto";
+} */
+
+.song-list {
+    padding:0;
+    margin:0;
+    font-size:16px;
+    color: #ab1164;
+    margin-top: 12px;
+    margin-left:10px;
+    font-family:"Roboto";
+    font-weight:light;
+}
+
+#SMALLERspace {
+    margin-top:2px;
+}
+
+#SMALLERSPACE {
+    margin-top:0px;
+}
+
+
+/* =========================
+   8. My Playlists
+========================= */
+
+/* .my-playlists {
+    border-top: 2px solid #e5b1c8;
+    padding-top: 8px;
+}
+
+.playlist-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.playlist-heading h3 {
+    margin: 0;
+}
+
+.playlist-heading button {
+    background-color: #b51b68;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    font-size: 12px;
+    cursor: pointer;
+} */
+
+/* Song List */
+
+/* .song {
+    border: 1.5px solid #d58aab;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-style: italic;
+} */
+
+/* .song-icons {
+    color: #b51b68;
+    font-style: normal;
+    cursor: pointer;
+} */
+
+
+/* /* =========================
+   9. Footer
+========================= */
+
+/* .footer {
+    background-color: #e9a9c3;
+    border: 2px solid #333;
+    min-height: 40px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-style: italic;
+} */ */
+
+footer {
+    display:inline-flex;
+    flex-direction: row;
+    padding:20px;
+    background-color: #ebb2c6;
+    color: #ab1164;
+    font-family:"Roboto";
+    font-style:italic;
+    font-size:20px;
+    position:fixed;
+    border: 1px solid #84074a;
+
+
+}
+
+footer {
+
+    display:inline-flex;
+    flex-direction: row;
+    font-family:"Roboto";
+    border: 1px solid #84074a;
+    padding:20px;
+    background-color: #ebb2c6;
+    /* margin-top:151px; */
+    position:fixed;
+    /* margin-top:106px; */
+    margin-top:59px;
+    width:1710px;
+    font-style:italic;
+   
+   
+}
+
+
+.footer-menu {
+    display:inline-flex;
+    flex-direction: row;
+    background-color: #ebb2c6;
+    font-family:"Roboto";
+    /* width:1700px; */
+    /* width:1628px; */
+    width:1710px;
+    height:30px;
+}
+
+.footerspace {
+    /* margin-left:18px; */
+    margin-left:18px;
+}
+
+.beeeg-space {
+    /* margin-left: 725px; */
+    margin-left:725px;
+}
+
+.star-divider {
+    font-style:normal;
+    margin-top:5px;
+    color:#84074a;
+    font-size:20px;
+
+}
+
+
+
+#email {
+    color:#84074a;
+    font-size:19px;
+    font-weight:normal;
+    margin-top:5px;
+    margin-left:0px;
+
+
+}
+
+#number {
+    color:#84074a;
+    font-size:19px;
+    font-weight:normal;
+    margin-top:5px;
+    margin-left:0px;
+}
+
+#date {
+    color:#84074a;
+    font-size:19px;
+    font-weight:normal;
+    margin-top:5px;
+    margin-left:25px;
+    margin-left:0px;
+}
+
+#time {
+    color:#84074a;
+    font-size:20px;
+    font-style:normal;
+    background-color:#ab116435;
+    border-radius:20%;
+    border:1px;
+    padding:5px;
+    margin-left:0px;
+    font-weight:bold;
+}
+
+
+

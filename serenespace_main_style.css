@@ -1,0 +1,415 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
+
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet"> */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* SOURCE: https://fonts.google.com/specimen/Leckerli+One
+SOURCE: https://fonts.google.com/specimen/Roboto */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    background-color: rgb(10, 10, 41)
+}
+
+
+.gradient-background {
+    background: linear-gradient(300deg,#FFE6E6,#E0FFD4,#FFF9CF);
+    background-size: 600% 600%;
+    animation: gradient-animation 18s ease infinite;
+    }
+
+        @keyframes gradient-animation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+
+
+    } 
+
+
+
+#main-menu {
+    /*background-color: #401687 */
+    /* background: linear-gradient(to right, #401687 0%, #540558 100%); */
+    border: 2px black;
+    background-color: #ebb2c6;
+    margin-bottom: 10px;
+    /* border: 2px black; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    display:flex;
+    border: 1px solid #84074a;
+
+}
+a {
+    color: #fff8c7;
+    text-decoration: none;
+    font-family:"Roboto";
+    padding: 10px;
+    font-size: 
+    xx-large;
+}
+
+
+
+#logo {
+    padding: 0;
+    /* margin-right:910px; */
+    margin-right:200px;
+    /* delete if not needed */
+    /* color: #ab1164;
+    border: 2px solid transparent;
+    background-color: ab1164;
+    border-radius: 8px;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+
+
+    color: #ab1164;
+    border: 2px solid transparent;
+    background-color: ab1164;
+    border-radius: 8px;
+    width: 250px;
+    height: 350px;
+    padding: 10px; */
+}
+
+nav {
+    /* display:inline; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    display:flexbox;
+}
+
+#log-in-button {
+    /* margin-top:10px; */
+    /* margin-right: width - 10px; */
+    z-index:15; /* source: https://www.youtube.com/watch?v=m7YDWNz65iI */
+    left:1260px;
+    bottom:1;
+
+    margin-top:15px;
+  
+    position: relative;
+    border-radius: 50px;
+    border-color:#ab1164;
+    background-color:#ab1164;
+    text-align:center;
+    font-size:20px;
+    text-align:center;
+    display:inline-flex;
+
+    height: 25px;
+    width:80px;
+    display: block;
+
+
+   
+      /* source: https://www.youtube.com/watch?v=m7YDWNz65iI */
+
+}
+
+#log-in-button:hover {
+    background-color:#71043e;
+}
+
+
+
+.header-greeting {
+    margin-top: 30px;
+    color: #ab1164;
+    font-family:"Leckerli One";
+    font-size: 50px;
+    font-weight:normal;
+    /* margin-left:700px; */
+    margin-left:33%;
+
+    /* display:flex;
+    justify-content:center;
+    display: block;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto; */
+}
+
+#intro {
+    margin-top: 20px;
+    color: #ab1164;
+    font-family:"Roboto";
+    font-size: 23px;
+    font-weight:normal;
+    margin-left:38%;
+
+}
+
+#daily-quote {
+    margin-top: 55px;
+    color: #ab1164;
+    font-family:"Roboto";
+    font-size: 37px;
+    font-weight:normal;
+    font-style:italic;
+    margin-left:27%;
+    opacity:50%;
+}
+
+
+.desktop-icons a {
+    display:block;
+    margin-left:50px;
+
+}
+
+.desktop-icons p {
+    color: #ab1164;
+    font-family:"Roboto";
+    font-size: 17px;
+    text-align:center;
+    /* margin-left:50px; */
+    margin-right:1510px;
+}
+
+.littletextspace {
+    margin-top:2px;
+}
+
+
+
+footer {
+    border: 2px black;
+    padding:20px;
+    background-color: #ebb2c6;
+    /* margin-bottom: 10px; */
+    /* margin-top: 10%; */
+    margin-top:5%;
+    color: #ab1164;
+    font-family:"Roboto";
+    font-style:italic;
+    font-size:20px;
+    position:fixed;
+    border: 1px solid #84074a;
+    /* margin-top:140px; */
+    margin-top:75px;
+
+}
+
+/* footer p {
+    color: #ab1164;
+    font-family:"Roboto";
+    font-style:italic;
+    font-size:20px;
+    display:inline-block;
+} */
+
+/* footer .contacts {
+    padding:5px;
+}
+
+footer .date-time {
+    padding:5px;
+    margin-left:80%;
+    margin-top:0px;
+} */
+
+
+/* footer li {
+    color: #ab1164;
+    font-family:"Roboto";
+    font-style:italic;
+    font-size:20px;
+    display:inline-block;
+} */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* .container {
+    padding: 2rem;
+
+}
+
+
+.slider-wrapper {
+    position: relative;
+    /* max-width: 48rem; */
+    /* max-width:50rem;
+    max-height:40rem; */
+
+    /* max-width: 900px;
+    max-height: 850px;
+    margin: 0 auto;
+
+} */
+
+/* .slider {
+    display: flex;
+    aspect-ratio: 8/3;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius:0.5rem;
+    border:1px solid #ab1164;
+    /* padding:3px;  */
+    /* margin:10px; */
+    
+/* } */
+
+
+/* .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+
+} */
+
+/* .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+} */
+
+/* .slider-nav a {
+    /* width: 0.5rem ;
+    height: 0.5rem; */
+    /* width:1px;
+    height:1px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.75;
+    transition: opacity ease 0.25s; */
+/* } */
+
+/* .slider-nav a:hover {
+    opacity: 1;
+
+} */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+ */
+
+
+
+ /* border: 2px black;
+    background-color: #ebb2c6;
+    margin-bottom: 10px;
+    border: 2px black; */
+
+
+
+footer {
+    /* border: 2px black;
+    padding:20px;
+    background-color: #ebb2c6;
+    /* margin-bottom: 10px; */
+    /* margin-top: 10%; */
+    /* margin-top:5%;
+    color: #ab1164;
+    font-family:"Roboto"; */
+
+    /* position:sticky;
+    display:inline-flex;
+    flex-direction: row;
+    background-color:#ebb2c6;
+    border: 1px solid #ab1164;
+    height:20px;
+    width:10000px; */
+
+    display:inline-flex;
+    flex-direction: row;
+    background-color: #ff065d;
+    font-family:"Roboto";
+    border: 1px solid #84074a;
+    margin-top:100%;
+}
+
+.footer-menu {
+    display:inline-flex;
+    flex-direction: row;
+    background-color: #ebb2c6;
+    font-family:"Roboto";
+    width:1700px;
+    height:30px;
+}
+
+.ineedaspaceidkhowtomakeone {
+    margin-left:18px;
+}
+
+.beeeg-space {
+    margin-left:700px;
+}
+
+.star-divider {
+    font-style:normal;
+    margin-top:5px;
+    color:#84074a;
+
+}
+
+
+
+#email {
+    color:#84074a;
+    font-size:19px;
+    font-weight:normal;
+    margin-top:5px;
+
+}
+
+#number {
+    color:#84074a;
+    font-size:19px;
+    font-weight:normal;
+    margin-top:5px;
+}
+
+#date {
+    color:#84074a;
+    font-size:19px;
+    font-weight:normal;
+    margin-top:5px;
+    margin-left:25px;
+}
+
+#time {
+    color:#84074a;
+    font-size:20px;
+    font-style:normal;
+    background-color:#ab116435;
+    border-radius:20%;
+    border:1px;
+    padding:5px;
+    /* margin-bottom:4px; */
+}
